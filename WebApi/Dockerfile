@@ -26,3 +26,6 @@ ENV ASPNETCORE_URLS=http://+:5001
 
 # Starten
 ENTRYPOINT ["dotnet", "WebApi.dll"]
+
+# Starten auf Windows
+# ENTRYPOINT ["dotnet", "WebApi.exe"]

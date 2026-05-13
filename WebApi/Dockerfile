@@ -22,7 +22,7 @@ COPY --from=build /app/publish .
 EXPOSE 5001
 
 # Anwendung auf Port 5001 laufen lassen
-ENV ASPNETCORE_URLS=http://+:5001
+ENV ASPNETCORE_URLS=http://localhost:5001
 
 # Starten
 ENTRYPOINT ["dotnet", "WebApi.dll"]
